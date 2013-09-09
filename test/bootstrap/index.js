@@ -62,7 +62,10 @@ global.addImage =  function(names)  {
   if (!Array.isArray(names)) names = [ names ];
   return function (done) {
     var rem = new dockeragent.Remote;
-    var next = chai.after(names.length, done);
+    var next = chai.after(names.length, function(err) {
+      should.not.exist(err);
+      done();
+    });
 
     rem.set('host', DOCKER_HOST);
     rem.set('port', DOCKER_PORT);
