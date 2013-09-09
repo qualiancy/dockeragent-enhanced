@@ -1,0 +1,26 @@
+{
+    "name": "dockeragent-enhanced"
+  , "version": "0.0.0"
+  , "description": "Enhancements for DockerAgent responses."
+  , "author": "Jake Luer <jake@datalabs.io>"
+  , "license": "MIT"
+  , "keywords": [
+    ]
+  , "repository": {
+        "type": "git"
+      , "url": "git@github.com:qualiancy/dockeragent-enhanced.git"
+    }
+  , "engines": {
+      "node": "*"
+    }
+  , "main": "./index"
+  , "scripts": {
+      "test": "mocha"
+    }
+  , "dependencies": {
+    }
+  , "devDependencies": {
+        "chai": "*"
+      , "mocha": "*"
+    }
+}
