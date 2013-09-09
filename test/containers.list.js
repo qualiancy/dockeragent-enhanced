@@ -58,6 +58,7 @@ describe('(hooks) containers:list', function() {
       running.should.have.property('container')
         .an.instanceof(cr.constructor);
       running.should.have.property('alive', true);
+      running.should.have.property('code', null);
       running.should.have.property('command', INFINITE_SCRIPT.join(' '));
       running.should.have.property('created').a('date');
       running.should.have.property('ports')
@@ -70,6 +71,7 @@ describe('(hooks) containers:list', function() {
       stopped.should.have.property('container')
         .an.instanceof(cs.constructor);
       stopped.should.have.property('alive', false);
+      stopped.should.have.property('code', 0);
       stopped.should.have.property('command', SIMPLE_SCRIPT.join(' '));
       stopped.should.have.property('created').a('date');
       stopped.should.have.property('ports')
