@@ -9,7 +9,7 @@ describe('(hooks) containers:create', function() {
   remote.set('host', DOCKER_HOST);
   remote.set('port', DOCKER_PORT);
 
-  var ns = 'containers:create';
+  var ns = 'container:create';
   var hook = enhanced[ns](remote);
   remote.hook(ns, hook);
 
