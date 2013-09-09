@@ -1,10 +1,11 @@
 TESTS = test/*.js
-REPORTER = spec
+REPORTER = list
 
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha \
 		--require ./test/bootstrap \
 		--reporter $(REPORTER) \
+		--timeout 500000 \
 		$(TESTS)
 
 test-cov: lib-cov

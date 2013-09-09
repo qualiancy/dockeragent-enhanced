@@ -18,9 +18,15 @@
       "test": "mocha"
     }
   , "dependencies": {
+        "gaia-hash": "0.1.x"
+      , "sherlock": "*"
     }
   , "devDependencies": {
         "chai": "*"
+      , "dockeragent": "*"
       , "mocha": "*"
+    }
+  , "peerDependencies": {
+        "dockeragent": "*"
     }
 }
