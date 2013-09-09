@@ -4,7 +4,7 @@ var INFINITE_SCRIPT = [ '/bin/sh', '-c', 'echo "hello world" > /.dockeragent; wh
 
 var Hash = require('gaia-hash').Hash;
 
-describe.only('(hooks) containers:list', function() {
+describe('(hooks) containers:list', function() {
   var remote = new dockeragent.Remote;
   remote.set('host', DOCKER_HOST);
   remote.set('port', DOCKER_PORT);
